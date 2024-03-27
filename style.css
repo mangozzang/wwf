@@ -1,0 +1,557 @@
+html {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+}
+
+/* 노멀라이즈 */
+body, ul, li, h1 {
+  margin:0;
+  padding:0;
+  list-style:none;
+  font-family: 'Noto Sans KR', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+}
+a {
+  color: #333;
+  text-decoration:none;
+}
+
+.top-bar-section {
+  border: 0px solid red;
+  width: 100%; position: fixed; left: 0; top: 0;
+  z-index: 999; padding-top: 10px; box-sizing: border-box;
+}
+.container {
+  max-width: 1440px; height: 90px;
+  display: flex; flex-basis: 0;
+  justify-content: space-between; 
+  align-items: center; margin: 0 auto;
+  border: 0px solid red;
+}
+.container > .logo-box > img {
+  width: 50px;
+}
+.container > nav {
+  width: 860px; 
+}
+.container > nav > ul {
+  display: flex; 
+}
+.container > nav > ul > li {
+  flex-grow: 1; flex-basis: 0; text-align: center;
+  position: relative; border: 0px solid red;
+  line-height: 40px;
+}
+.container > nav > ul > li > a {
+  color: #fff; font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+nav > ul > li > .sub {
+  position: absolute; top: 100%;
+  width: 100%; background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px; display: none;
+}
+nav > ul > li > .sub > ul {
+  padding: 5px;
+}
+nav > ul > li > .sub > ul > li > a {
+  color: #fff; line-height: 40px; font-weight: 400;
+}
+nav > ul > li > .sub > ul > li:hover {
+  background-color: #283618;
+  cursor: pointer; border-radius: 10px;
+}
+
+.container > .right-box {
+  min-width: 150px; text-align: end;
+}
+.container > .right-box > a {
+  padding: 10px 30px; color: #283618;
+  background-color: #fff; border-radius: 30px;
+  font-weight: 700; border: 0px solid red;
+}
+.container > .right-box > a:hover {
+  background-color: #283618; color: #fff;
+  font-weight: 700;
+}
+
+.page-1 {
+  background-image: url(images/fage-1-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center; display: flex;
+}
+.page-1 > .text-box-wrap {
+  max-width: 1440px; width: 100%; margin: auto;
+  border: 0px solid red; 
+}
+.page-1 > .text-box-wrap > .text-box > .main-text {
+  margin-bottom: 30px;
+}
+.page-1 > .text-box-wrap > .text-box > .main-text > p {
+  font-size: 62px; color: #fff; font-family: 'Roboto', sans-serif;
+  font-weight: 500; margin: 0;
+}
+.page-1 > .text-box-wrap > .text-box > .main-text > p > span {
+  font-size: 62px; color: #fff; font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+.page-1 > .text-box-wrap > .text-box > .sub-text {
+  margin-bottom: 50px;
+}
+.page-1 > .text-box-wrap > .text-box > .sub-text > p {
+  font-weight: 400; color: #fff; font-size: 24px;
+} 
+.page-1 > .text-box-wrap > .text-box > a {
+  font-size: 16px; font-family: 'Roboto', sans-serif; font-weight: 500;
+  color: #333; background-color: #fff;
+  padding: 14px 20px; border-radius: 30px;
+}
+.page-1 > .text-box-wrap > .text-box > a:hover {
+  background-color: #283618; color: #fff;
+}
+.page-1 > .text-box-wrap > .text-box > a > i {
+  margin-left: 10px; 
+}
+.page-1 > .text-box-wrap > .text-box > a:hover > i {
+  margin-left: 20px;
+}
+
+.page-2{
+  background-image: url(images/world-art-day-celebration-with-hands-posing\ 1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center; display: flex;
+}
+.page-2 > .text-box-wrap {
+  max-width: 1440px; width: 100%; margin: auto;
+  border: 0px solid red; text-align: end;
+}
+.page-2 > .text-box-wrap > .text-box > .main-text {
+  margin-bottom: 30px;
+}
+.page-2 > .text-box-wrap > .text-box > .main-text > span {
+  font-size: 62px; color: #fff; font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+.page-2 > .text-box-wrap > .text-box > .sub-text {
+  margin-bottom: 50px;
+}
+.page-2 > .text-box-wrap > .text-box > .sub-text > p {
+  font-weight: 400; color: #fff; font-size: 24px;
+} 
+.page-2 > .text-box-wrap > .text-box > a {
+  font-size: 16px; font-family: 'Roboto', sans-serif; font-weight: 500;
+  color: #333; background-color: #fff;
+  padding: 14px 20px; border-radius: 30px;
+}
+.page-2 > .text-box-wrap > .text-box > a:hover {
+  background-color: #283618; color: #fff;
+}
+.page-2 > .text-box-wrap > .text-box > a > i {
+  margin-left: 10px; 
+}
+.page-2 > .text-box-wrap > .text-box > a:hover > i {
+  margin-left: 20px;
+}
+
+.page-3{
+  background-image: url(images/fage-3-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center; display: flex;
+}
+.page-3 > .con-wrap {
+  max-width: 1440px; width: 100%; margin: auto;
+  border: 0px solid red; display: flex;
+  flex-grow: 1; flex-basis: 0; align-items: center;
+  padding-top: 20px;
+}
+.page-3 > .con-wrap > .text-box {
+  border: 0px solid blue; align-items: center;
+  height: 100%;
+}
+.page-3 > .con-wrap > .text-box > .main-text {
+  margin-bottom: 30px;
+}
+.page-3 > .con-wrap > .text-box > .main-text >  span {
+  font-size: 62px; color: #fff; font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+.page-3 > .con-wrap > .text-box > .sub-text > p {
+  font-weight: 400; color: #fff; font-size: 24px;
+}
+
+.swiper-section {
+  border: 0px solid pink; flex-grow: 1; flex-basis: 0;
+  margin-top: 40px;
+}
+.swiper-section > .container {
+	border: 0px solid orange;
+	height: 530px; 
+	justify-content: flex-end;
+	display: flex;
+}
+.swiper-section > .container > .swiper {
+	max-width: 430px; height: 100%; border-radius: 30px;
+  margin-left: 20px; margin-right: 20px;
+}
+.swiper-section > .container >
+.swiper > .swiper-wrapper > .swiper-slide > .pro-box {
+	border: 0px solid green;
+	height: 100%; width: 100%;
+}
+.pro-box > a > .img-box {
+  width: 100%; height: 100%;
+  position: relative;
+}
+.pro-box > a > .img-box > img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: 0.7s;
+}
+.pro-box > a > .img-box > .black-box {
+  width: 100%; height: 100%;
+  background-color: #000;
+  position: absolute; left: 0; top: 0;
+  color: #fff; opacity: 0;
+  display: flex; justify-content: center;
+  align-items: center;
+}
+.pro-box > a > .img-box:hover > .black-box {
+  opacity: 0.8;
+}
+.pro-box > a > .img-box:hover > img {
+  transform: scale(1.2);
+}
+.black-box > .text-box {
+  border: 0px solid red; text-align: center;
+}
+.black-box > .text-box > span {
+  font-size: 60px; margin-top: 0; margin-bottom: 0;
+  font-family: 'Covered By Your Grace', cursive;
+}
+.black-box > .text-box > .card-6 {
+  font-size: 54px;
+}
+.black-box > .text-box > p {
+  font-size: 20px; margin-top: -10px; margin-bottom: 50px;
+}
+.black-box > .text-box > .more {
+  font-weight: 700; font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px; border: 1px solid #fff;
+  padding: 10px 40px; border-radius: 30px;
+}
+.swiper-section > .container >
+.swiper > .swiper-wrapper > .swiper-slide-1 {
+	background-color: orange;
+}
+.swiper-slide-1 > a > .img-box {
+  border: 1px solid red;
+  width: 100%; height: 100%;
+}
+.swiper-section > .container >
+.swiper > .swiper-wrapper > .swiper-slide-2 {
+	background-color: green;
+}
+.swiper-section > .container >
+.swiper > .swiper-wrapper > .swiper-slide-3 {
+	background-color: pink;
+}
+.swiper-section > .container >
+.swiper > .swiper-wrapper > .swiper-slide-4 {
+	background-color: red;
+}
+.swiper-section > .container >
+.swiper > .swiper-wrapper > .swiper-slide-5 {
+	background-color: purple;
+}
+.swiper-section > .container >
+.swiper > .swiper-wrapper > .swiper-slide-6 {
+	background-color: navy;
+}
+.swiper-section > .container > .prev-button-box {
+  border: 0px solid blue;
+  display: flex; align-items: center;
+}
+.swiper-section > .container > .next-button-box {
+  border: 0px solid blue;
+  display: flex; align-items: center;
+}
+.swiper-section > .container > .swiper-button-box >
+.swiper-button-prev {
+	border: 0px solid red;
+	position: static; 
+	color: #fff; font-size: 60px;
+  width: 50px; height: 50px;
+}
+.swiper-section > .container > .swiper-button-box > 
+.swiper-button-next {
+	border: 0px solid red;
+	position: static;
+	color: #fff; font-size: 60px;
+  width: 50px; height: 50px;
+}
+.swiper-section > .container > .swiper-button-box >
+.swiper-button-prev::after {
+	content: "";
+	display: none;
+}
+.swiper-section > .container > .swiper-button-box > 
+.swiper-button-next::after {
+	content: "";
+	display: none;
+}
+
+.page-4{
+  background-image: url(images/sincerely-media-dGxOgeXAXm8-unsplash\ 1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center; display: flex;
+}
+.page-4 > .text-box-wrap {
+  max-width: 1440px; width: 100%; margin: auto;
+  border: 0px solid red; text-align: end;
+}
+.page-4 > .text-box-wrap > .text-box > .main-text {
+  margin-bottom: 30px;
+}
+.page-4 > .text-box-wrap > .text-box > .main-text > span {
+  font-size: 62px; color: #fff; font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+.page-4 > .text-box-wrap > .text-box > .sub-text {
+  margin-bottom: 50px;
+}
+.page-4 > .text-box-wrap > .text-box > .sub-text > p {
+  font-weight: 400; color: #fff; font-size: 24px;
+} 
+.page-4 > .text-box-wrap > .text-box > a {
+  font-size: 16px; font-weight: 500;
+  color: #333; background-color: #fff;
+  padding: 12px 20px; border-radius: 30px;
+  margin-left: 7px;
+}
+.page-4 > .text-box-wrap > .text-box > a:hover {
+  background-color: #283618; color: #fff;
+}
+.page-4 > .text-box-wrap > .text-box > a > i {
+  margin-left: 10px; 
+}
+.page-4 > .text-box-wrap > .text-box > a:hover > i {
+  margin-left: 20px;
+}
+
+.page-5{
+  background-image: url(images/fage-5-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center; display: flex;
+}
+.page-5 > .text-box-wrap {
+  max-width: 1440px; width: 100%; margin: auto;
+  border: 0px solid red; 
+}
+.page-5 > .text-box-wrap > .text-box > .main-text {
+  margin-bottom: 30px;
+}
+.page-5 > .text-box-wrap > .text-box > .main-text > span {
+  font-size: 62px; color: #fff; font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+.page-5 > .text-box-wrap > .text-box > .sub-text {
+  margin-bottom: 50px;
+}
+.page-5 > .text-box-wrap > .text-box > .sub-text > p {
+  font-weight: 400; color: #fff; font-size: 24px;
+} 
+.page-5 > .text-box-wrap > .text-box > a {
+  font-size: 16px; font-weight: 500; font-family: 'Roboto', sans-serif;
+  color: #333; background-color: #fff;
+  padding: 12px 20px; border-radius: 30px;
+  margin-left: 7px;
+}
+.page-5 > .text-box-wrap > .text-box > a:hover {
+  background-color: #283618; color: #fff;
+}
+.page-5 > .text-box-wrap > .text-box > a > i {
+  margin-left: 10px; 
+}
+.page-5 > .text-box-wrap > .text-box > a:hover > i {
+  margin-left: 20px;
+}
+
+.page-6{
+  background-image: url(images/fage-6-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center; display: flex;
+  position: relative;
+}
+.page-6 > .con-wrap {
+  max-width: 1440px; width: 100%; margin: auto;
+  border: 0px solid red; display: flex;
+  flex-grow: 1; flex-basis: 0; align-items: flex-start;
+}
+.page-6 > .con-wrap > .text-box {
+  border: 0px solid blue; align-items: center;
+  height: 100%; margin-bottom: 100px;
+}
+.page-6 > .con-wrap > .text-box > .main-text {
+  margin-bottom: 30px;
+}
+.page-6 > .con-wrap > .text-box > .main-text >  span {
+  font-size: 62px; color: #fff; 
+  font-weight: 700; margin: 0;
+}
+.page-6 > .con-wrap > .text-box > .sub-text > p {
+  font-weight: 400; color: #fff; font-size: 24px;
+}
+
+.form-section {
+  border: 0px solid pink; flex-grow: 1; flex-basis: 0;
+  flex-grow: 1; flex-basis: 0; height: 100%; 
+  margin-left: 300px; display: flex; flex-direction: column;
+}
+.form-section > .namephone {
+  display: flex; border: 0px solid cornflowerblue;
+  margin-bottom: 10px;
+}
+.form-section > .namephone >.name {
+  flex-grow: 1; display: flex; flex-direction: column;
+  margin-right: 30px; flex-basis: 0;
+}
+.form-section > .namephone >.name > p {
+  margin-top: 0; margin-bottom: 10px; color: #fff;
+  font-size: 16px;
+}
+.form-section > .namephone > .name > input {
+  border-radius: 7px; width: 100%; height: 40px;
+  background-color: #EBEBEB; border: none;
+}
+.form-section > .namephone >.phone {
+  flex-grow: 1; display: flex; flex-direction: column;
+  flex-basis: 0;
+}
+.form-section > .namephone >.phone > p {
+  margin-top: 0; margin-bottom: 10px; color: #fff;
+  font-size: 16px;
+}
+.form-section > .namephone > .phone > input {
+  border-radius: 7px; width: 100%; height: 40px;
+  background-color: #EBEBEB; border: none;
+}
+.form-section > .mail {
+  display: flex; border: 0px solid cornflowerblue;
+  margin-bottom: 10px;
+}
+.form-section > .mail >.email {
+  flex-grow: 1; display: flex; flex-direction: column;
+  flex-basis: 0;
+}
+.form-section > .mail >.email > p {
+  margin-top: 0; margin-bottom: 10px; color: #fff;
+  font-size: 16px;
+}
+.form-section > .mail > .email > input {
+  border-radius: 7px; width: 100%; height: 40px;
+  background-color: #EBEBEB; border: none;
+}
+.form-section > .check {
+  border: 0px solid pink; display: flex; margin-bottom: 10px;
+}
+.form-section > .check > .check-1 {
+  display: flex; align-items: center; margin-right: 20px;
+}
+.form-section > .check > .check-1 > i {
+  color: #fff; font-size: 18px; margin-right: 7px;
+}
+.form-section > .check > .check-1 > p {
+  margin: 0; color: #fff;
+}
+.form-section > .check > .check-2 {
+  display: flex; align-items: center;
+}
+.form-section > .check > .check-2 > i {
+  color: #fff; font-size: 18px; margin-right: 7px;
+}
+.form-section > .check > .check-2 > p {
+  margin: 0; color: #fff;
+}
+.form-section > .form-button {
+  width: 100%; background-color: #283618; color: #fff; font-weight: bold;
+  display: block; width: 100%; height: 50px; border-radius: 7px;
+  text-align: center; line-height: 50px; font-size: 16px;
+}
+.form-section > .form-button:hover {
+  background-color: #fff; color: #283618;
+  cursor: pointer;
+}
+
+.footer-section {
+  width: 100%; height: 180px;
+  position: absolute; left: 0; bottom: 0;
+  background-color: rgba(40, 54, 24,0.8);
+}
+.footer-section > .footer-wrap {
+  max-width: 1440px; height: 100%; margin: 0 auto; display: flex;
+  border: 0px solid red; flex-direction: column;
+}
+.footer-section > .footer-wrap > .top-wrap {
+  width: 100%; height: 70px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  display: flex; align-items: center;
+}
+.top-wrap > .footer-menu {
+  display: flex; flex-grow: 1;
+}
+.top-wrap > .footer-menu > li > a {
+  color: #EBEBEB; font-size: 14px;
+}
+.top-wrap > .footer-menu > li::after {
+  content: "|";
+  margin: 0 10px;
+  color: #EBEBEB;
+}
+.top-wrap > .footer-menu > .last::after {
+  content: "";
+  margin: 0;
+}
+.top-wrap > .sns {
+  display: flex; flex-grow: 1;
+  justify-content: flex-end;
+}
+.sns > li {
+  margin-left: 14px;
+}
+.sns > li > a {
+  color: #EBEBEB; font-size: 20px; 
+}
+.footer-section > .footer-wrap > .bottom-wrap {
+  flex-grow: 1; width: 100%; height: 100%; display: flex; align-items: center;
+  border: 0px solid red;
+}
+.footer-section > .footer-wrap > .bottom-wrap > .btlogo-box {
+  width: 50px; margin-right: 20px;
+}
+.footer-section > .footer-wrap > .bottom-wrap > .btlogo-box > img {
+  width: 100%; 
+}
+.footer-section > .footer-wrap > .bottom-wrap > .bttext-box {
+  flex-grow: 1; height: 100%; display: flex; flex-direction: column;
+  justify-content: center;
+}
+.footer-section > .footer-wrap > .bottom-wrap > .bttext-box > span {
+  font-size: 14px; font-weight: 700; color: #EBEBEB; margin-bottom: 10px;
+}
+.footer-section > .footer-wrap > .bottom-wrap > .bttext-box > p {
+  font-size: 12px; color: #EBEBEB; margin-bottom: 7px; margin-top: 0;
+}
+.footer-section > .footer-wrap > .bottom-wrap > .bttext-box > .copy {
+  margin: 0;
+}
